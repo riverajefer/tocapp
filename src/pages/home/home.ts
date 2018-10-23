@@ -1,5 +1,7 @@
+import { ListPage } from './../list/list';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, MenuController } from 'ionic-angular';
+
 
 @Component({
   selector: 'page-home',
@@ -7,7 +9,20 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(
+    public navCtrl: NavController,
+    public menuCtrl: MenuController
+  ) {  }
+
+  ionViewDidEnter() {
+    this.menuCtrl.enable(false, 'authenticated');
+  }
+  ionViewWillLeave() {
+    this.menuCtrl.enable(true, 'authenticated');
+  }
+
+  onGoTolist() {
+    this.navCtrl.push(ListPage);
 
   }
 
