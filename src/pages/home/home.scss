@@ -6,21 +6,50 @@ page-home {
   .content-md {
     background-color: transparent;
   }
-  .footer-md::before{
+
+  .footer-md::before {
     background-image: none;
   }
 
   .btn_home {
+    margin: 20px 0px;
 
     button {
       display: block;
       margin: 15px auto;
     }
+
     .btn_register {
       border: 1px solid map-get($colors, blue)
     }
   }
 
+  .content {
+    position: relative;
+    top: 19%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
+    img {
+      width: 50%;
+    }
+
+    h1 {
+      color: map-get($colors, white);
+      font-weight: bold;
+      margin-top: 1px;
+    }
+
+    p {
+      color: map-get($colors, white);
+      font-style: italic;
+      font-weight: 300;
+      font-size: 4.5vw;
+    }
+
+  }
 
 
 

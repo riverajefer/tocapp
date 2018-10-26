@@ -1,11 +1,19 @@
 <ion-content padding>
 
-
+  <div class="content">
+    <img src="assets/imgs/logo_home.png" alt="TOC">
+    <h1>TOC</h1>
+    <p>
+      App de incentivos para <br>
+      colaboradores de call center
+    </p>
+  </div>
 
 </ion-content>
+
 <ion-footer no-shadow>
   <div class="btn_home" center>
-    <button ion-button color="light" class="btn" round>Ingresar</button>
+    <button ion-button color="light" class="btn" round (click)="onGoToLogin()">Ingresar</button>
     <button ion-button color="primary" class="btn btn_register" round>Registrate</button>
   </div>
 </ion-footer>

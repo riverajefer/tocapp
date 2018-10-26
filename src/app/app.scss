@@ -15,6 +15,14 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
 .btn {
-  padding: 0 5.6rem;
+  padding: 0px 7.6rem;
+  width: 250px;
+  height: 40px;
 }

@@ -1,0 +1,76 @@
+page-login {
+  /* background-image: url('../../assets/imgs/bg_purple.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+ */
+  background: rgba(45, 43, 63, 1);
+  background: -moz-linear-gradient(top, rgba(45, 43, 63, 1) 0%, rgba(55, 46, 99, 1) 43%, rgba(56, 46, 104, 1) 57%, rgba(45, 43, 63, 1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(45, 43, 63, 1)), color-stop(43%, rgba(55, 46, 99, 1)), color-stop(57%, rgba(56, 46, 104, 1)), color-stop(100%, rgba(45, 43, 63, 1)));
+  background: -webkit-linear-gradient(top, rgba(45, 43, 63, 1) 0%, rgba(55, 46, 99, 1) 43%, rgba(56, 46, 104, 1) 57%, rgba(45, 43, 63, 1) 100%);
+  background: -o-linear-gradient(top, rgba(45, 43, 63, 1) 0%, rgba(55, 46, 99, 1) 43%, rgba(56, 46, 104, 1) 57%, rgba(45, 43, 63, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(45, 43, 63, 1) 0%, rgba(55, 46, 99, 1) 43%, rgba(56, 46, 104, 1) 57%, rgba(45, 43, 63, 1) 100%);
+  background: linear-gradient(to bottom, rgba(45, 43, 63, 1) 0%, rgba(55, 46, 99, 1) 43%, rgba(56, 46, 104, 1) 57%, rgba(45, 43, 63, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2d2b3f', endColorstr='#2d2b3f', GradientType=0);
+
+  .content-md {
+    background-color: transparent;
+  }
+
+
+  .content {
+    position: relative;
+    top: 3%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
+    img {
+      width: 40%;
+    }
+
+    h1 {
+      color: map-get($colors, white);
+      font-weight: bold;
+      margin-top: 1px;
+    }
+  }
+
+  .title_inicio {
+    color: map-get($colors, white);
+    font-weight: bold;
+    margin-top: 25%;
+    font-size: 6vw;
+  }
+
+  .form_login {
+    .item-md {
+      padding-left: 0px;
+      background-color: transparent;
+    }
+
+    .item-input .label-md {
+      color: map-get($colors, white);
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 100;
+    }
+
+  }
+
+  .list-md .item-block .item-inner,
+  .list-md .item-input:last-child {
+    border-bottom: 1px solid map-get($colors, blue);
+  }
+
+  .item-input ion-input {
+    color: map-get($colors, white);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+  }
+
+  .btn_login {
+    border: 1px solid map-get($colors, blue);
+    margin-top: 30px;
+  }
+
+}
