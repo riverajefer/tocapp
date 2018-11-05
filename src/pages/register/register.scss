@@ -1,5 +1,4 @@
-page-login {
-
+page-register {
   background: rgba(45, 43, 63, 1);
   background: -moz-linear-gradient(top, rgba(45, 43, 63, 1) 0%, rgba(55, 46, 99, 1) 43%, rgba(56, 46, 104, 1) 57%, rgba(45, 43, 63, 1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(45, 43, 63, 1)), color-stop(43%, rgba(55, 46, 99, 1)), color-stop(57%, rgba(56, 46, 104, 1)), color-stop(100%, rgba(45, 43, 63, 1)));
@@ -9,21 +8,22 @@ page-login {
   background: linear-gradient(to bottom, rgba(45, 43, 63, 1) 0%, rgba(55, 46, 99, 1) 43%, rgba(56, 46, 104, 1) 57%, rgba(45, 43, 63, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2d2b3f', endColorstr='#2d2b3f', GradientType=0);
 
+  font-family: 'Open Sans', sans-serif;
+
   .content-md {
     background-color: transparent;
   }
 
-
   .content {
     position: relative;
-    top: 3%;
+    top: 0%;
     width: 90%;
     margin: 0 auto;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 
     img {
-      width: 40%;
+      width: 30%;
     }
 
     h1 {
@@ -36,19 +36,20 @@ page-login {
   .title_inicio {
     color: map-get($colors, white);
     font-weight: bold;
-    margin-top: 25%;
-    font-size: 6vw;
+    margin-top: 8%;
+    font-size: 5vw;
   }
 
-  .form_login {
+  .form_register {
     .item-md {
       padding-left: 0px;
       background-color: transparent;
     }
 
     .item-input .label-md {
-      color: map-get($colors, white);
+      color: #b7b5c2;
       font-family: 'Open Sans', sans-serif;
+      font-style: italic;
       font-weight: 100;
     }
 
@@ -56,18 +57,58 @@ page-login {
 
   .list-md .item-block .item-inner,
   .list-md .item-input:last-child {
-    border-bottom: 1px solid map-get($colors, blue);
+    border-bottom: 1px solid #9692a9;
   }
 
   .item-input ion-input {
-    color: map-get($colors, white);
+    color: #b7b5c2;
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
   }
 
-  .btn_login {
+  .btn_register {
     border: 1px solid map-get($colors, blue);
     margin-top: 30px;
   }
 
+  .item-label-floating {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 4vW;
+  }
+
+  .text-input-md {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 4vW;
+  }
+
+  .input-pin {
+    margin-top: 30px;
+
+    ion-input {
+      background-color: map-get($colors, white);
+      border-radius: 10px;
+      color: map-get($colors, dark);
+      padding: 0px 7px;
+    }
+  }
+
+  .acepto_terminos {
+    margin: 20px 0px;
+    padding-bottom: 50px;
+
+    ion-label {
+      color: map-get($colors, white);
+    }
+  }
+
+  .toolbar-background-md {
+    background-color: map-get($colors, primary);
+    padding: 7px 20px;
+  }
+
+  .toolbar-md {
+    padding: 4px 50px;
+  }
 }

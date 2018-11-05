@@ -1,19 +1,23 @@
-<ion-content padding>
+<ion-header>
+  <ion-navbar color="navbar">
 
-  <div class="content">
-    <img src="assets/imgs/logo_home.png" alt="TOC">
-    <h1>TOC</h1>
-    <p>
-      App de incentivos para <br>
-      colaboradores de call center
-    </p>
-  </div>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>HOME</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <img src="assets/imgs/icono_nav.svg" alt="TOC" class="icon_nav">
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="content">
+  <p class="ti_home">PUNTOS <span>ACUMULADOS</span></p>
+  <h1 class="points">170</h1>
 
 </ion-content>
-
-<ion-footer no-shadow>
-  <div class="btn_home" center>
-    <button ion-button color="light" class="btn" round (click)="onGoToLogin()">Ingresar</button>
-    <button ion-button color="primary" class="btn btn_register" round>Registrate</button>
-  </div>
-</ion-footer>

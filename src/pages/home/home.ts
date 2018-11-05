@@ -1,27 +1,24 @@
 import { Component } from '@angular/core';
-import { NavController, MenuController } from 'ionic-angular';
-import { LoginPage } from './../login/login';
+import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
 })
 export class HomePage {
 
   constructor(
     public navCtrl: NavController,
-    public menuCtrl: MenuController
-  ) {  }
+    public navParams: NavParams,
+    public menuCtrl: MenuController) {
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad HomePage');
+  }
 
   ionViewDidEnter() {
-    this.menuCtrl.enable(false, 'authenticated');
-  }
-  ionViewWillLeave() {
     this.menuCtrl.enable(true, 'authenticated');
   }
-
-  onGoToLogin() {
-    this.navCtrl.push(LoginPage);
-  }
-
 }

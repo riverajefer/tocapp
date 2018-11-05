@@ -1,7 +1,7 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { Nav } from 'ionic-angular';
 
-import { HomePage } from '../../pages/home/home';
+import { WelcomePage } from '../../pages/welcome/welcome';
 import { ListPage } from '../../pages/list/list';
 
 @Component({
@@ -11,7 +11,7 @@ import { ListPage } from '../../pages/list/list';
 export class MenuComponent implements OnInit  {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = WelcomePage;
 
   text: string;
   pages: Array<{title: string, component: any}>;
@@ -22,7 +22,7 @@ export class MenuComponent implements OnInit  {
 
   ngOnInit() {
     this.pages = [
-      { title: 'Home', component: HomePage },
+      { title: 'Home', component: WelcomePage },
       { title: 'List', component: ListPage }
     ];
   }

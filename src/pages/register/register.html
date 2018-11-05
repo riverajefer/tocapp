@@ -1,0 +1,67 @@
+<ion-content padding (ionScroll)="onScroll($event)">
+
+  <div class="content">
+    <img src="assets/imgs/logo_home.png" alt="TOC">
+    <h1>TOC</h1>
+  </div>
+
+  <h2 class="title_inicio">
+    REGISTRO
+  </h2>
+
+  <ion-list class="form_register">
+
+    <ion-item>
+      <ion-label floating>Nombre</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Correo</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Celular</ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Contraseña</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Confirmar Contraseña</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-pin">
+      <ion-input type="number" placeholder="Pin de Referencia"></ion-input>
+    </ion-item>
+
+    <ion-item class="acepto_terminos">
+      <ion-label>Acepto términos y condiciones</ion-label>
+      <ion-toggle checked="false" color="primary"></ion-toggle>
+    </ion-item>
+
+    <!-- <button ion-button color="primary" class="btn btn_register" round>Registro</button> -->
+  </ion-list>
+
+
+</ion-content>
+
+<ion-footer *ngIf="showFooter" color="primary">
+  <ion-toolbar>
+    <ion-buttons left>
+      <button ion-button icon-only>
+        <ion-icon color="white" name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons right>
+      <button ion-button icon-only>
+        <ion-icon color="white" name="checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

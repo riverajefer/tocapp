@@ -1,56 +1,45 @@
 page-home {
-  background-image: url('../../assets/imgs/bg_home.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
 
   .content-md {
-    background-color: transparent;
+    background-color: map-get($colors, dark)
   }
 
-  .footer-md::before {
-    background-image: none;
+  ion-content {
+    background-color: map-get($colors, dark)
   }
 
-  .btn_home {
-    margin: 20px 0px;
-
-    button {
-      display: block;
-      margin: 15px auto;
-    }
-
-    .btn_register {
-      border: 1px solid map-get($colors, blue)
-    }
+  img.icon_nav {
+    width: 50px;
   }
 
-  .content {
-    position: relative;
-    top: 19%;
-    width: 90%;
-    margin: 0 auto;
+  ion-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 90px 1px;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-
-    img {
-      width: 50%;
-    }
-
-    h1 {
-      color: map-get($colors, white);
-      font-weight: bold;
-      margin-top: 1px;
-    }
-
-    p {
-      color: map-get($colors, white);
-      font-style: italic;
-      font-weight: 300;
-      font-size: 4.5vw;
-    }
-
   }
 
+  .ti_home {
+    font-family: 'Open Sans', sans-serif;
+    color: map-get($colors, white);
+    font-weight: 100;
+    font-size: 6vw;
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .points {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25vw;
+    color: map-get($colors, white);
+    font-weight: 200;
+    text-align: right;
+    padding-right: 10px;
+  }
 
 
 }

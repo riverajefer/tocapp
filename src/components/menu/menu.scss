@@ -1,3 +1,35 @@
 menu {
+  .content-md {
+    background-color: map-get($colors, primary)
+  }
+
+  .item-md.item-block .item-inner {
+    border: none;
+  }
+
+  .btn_close_menu {
+    padding-left: 21px;
+  }
+
+  ion-menu.show-menu {
+    width: 28%;
+  }
+
+  .list-md {
+    margin: 14px 0 16px;
+  }
+
+  .icon-md-navbar {
+    font-size: 9vW;
+  }
+
+  .item-md {
+    padding-left: 33px;
+  }
+  ion-list {
+    button:hover {
+      background-color: map-get($colors, navbar);
+    }
+  }
 
 }
