@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { ReferidosPage } from '../referidos/referidos';
 
-/**
- * Generated class for the RankingPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -15,11 +10,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RankingPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public modalCtrl: ModalController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RankingPage');
+  }
+
+  onGoToReferidos() {
+    // this.navCtrl.setRoot(ReferidosPage);
+    const modal = this.modalCtrl.create(ReferidosPage);
+    modal.present();
   }
 
 }

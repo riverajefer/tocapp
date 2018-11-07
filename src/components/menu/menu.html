@@ -11,7 +11,7 @@
 
   <ion-content>
     <ion-list>
-      <button menuClose ion-item color="primary">
+      <button menuClose ion-item color="primary" (click)="onGoToHome()">
         <img src="assets/imgs/menu/home.png" alt="Home" width="30px">
       </button>
       <button menuClose ion-item color="primary">
@@ -20,7 +20,7 @@
       <button menuClose ion-item color="primary">
         <img src="assets/imgs/menu/call.png" alt="Call" width="30px">
       </button>
-      <button menuClose ion-item color="primary">
+      <button  ion-item color="primary" menuClose (click)="onGoToRanking()">
         <img src="assets/imgs/menu/ranking.png" alt="Ranking" width="30px">
       </button>
       <button menuClose ion-item color="primary">

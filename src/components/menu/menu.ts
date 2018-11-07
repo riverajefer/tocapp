@@ -3,18 +3,20 @@ import { Nav } from 'ionic-angular';
 
 import { WelcomePage } from '../../pages/welcome/welcome';
 import { ListPage } from '../../pages/list/list';
+import { RankingPage } from './../../pages/ranking/ranking';
+import { HomePage } from '../../pages/home/home';
 
 @Component({
   selector: 'menu',
   templateUrl: 'menu.html'
 })
-export class MenuComponent implements OnInit  {
+export class MenuComponent implements OnInit {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = WelcomePage;
 
   text: string;
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{ title: string, component: any }>;
 
   constructor() {
 
@@ -28,5 +30,13 @@ export class MenuComponent implements OnInit  {
   }
   openPage(page) {
     this.nav.setRoot(page.component);
+  }
+
+  onGoToRanking() {
+    this.nav.setRoot(RankingPage);
+  }
+
+  onGoToHome() {
+    this.nav.setRoot(HomePage);
   }
 }

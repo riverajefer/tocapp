@@ -1,3 +1,66 @@
 page-ranking {
+  .content-md {
+    background-color: map-get($colors, dark)
+  }
+
+  ion-content {
+    background-color: map-get($colors, dark)
+  }
+
+  img.icon_nav {
+    width: 35px;
+  }
+
+  ion-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 90px 1px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .ti_ranking {
+    font-family: 'Open Sans', sans-serif;
+    color: map-get($colors, white);
+    font-weight: 100;
+    font-size: 5vw;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .points {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18vw;
+    color: map-get($colors, white);
+    font-weight: 200;
+    text-align: right;
+    padding-right: 10px;
+    margin: 0px;
+  }
+
+  ion-list.list_ranking {
+    font-family: 'Open Sans', sans-serif;
+    ion-item {
+      background-color: #FEDC5E;
+      h1{
+        font-size: 17vw;
+        font-weight: 300;
+      }
+
+    }
+    ion-item.encuestas {
+      background-color: #FEDC5E;
+    }
+    ion-item.referidos {
+      background-color: #D8AE2B;
+    }
+    ion-item.ventas {
+      background-color: #B58F24;
+    }
+  }
 
 }

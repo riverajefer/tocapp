@@ -12,7 +12,8 @@ import { RegisterPage } from '../pages/register/register';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
-
+import { RankingPage } from './../pages/ranking/ranking';
+import { ReferidosPage } from '../pages/referidos/referidos';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { HomePage } from '../pages/home/home';
     LoginPage,
     MenuComponent,
     RegisterPage,
-    HomePage
+    HomePage,
+    RankingPage,
+    ReferidosPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,9 @@ import { HomePage } from '../pages/home/home';
     LoginPage,
     ListPage,
     RegisterPage,
-    HomePage
+    HomePage,
+    RankingPage,
+    ReferidosPage
   ],
   providers: [
     StatusBar,

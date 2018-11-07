@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -21,7 +22,10 @@ export class RegisterPage {
     if(e.scrollTop >= 197) {
       this.showFooter = true;
     }
+  }
 
+  onGoToHome() {
+    this.navCtrl.setRoot(HomePage);
   }
 
 }

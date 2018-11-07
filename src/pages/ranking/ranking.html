@@ -1,18 +1,45 @@
-<!--
-  Generated template for the RankingPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
+  <ion-navbar color="navbar">
 
-  <ion-navbar>
-    <ion-title>Ranking</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>RANKING</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <img src="assets/imgs/icono_nav.svg" alt="TOC" class="icon_nav">
+      </button>
+    </ion-buttons>
+
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="content">
+  <div padding>
+    <p class="ti_ranking">PUNTOS <span>ACUMULADOS</span></p>
+    <h1 class="points">170</h1>
+  </div>
+
+  <ion-list class="list_ranking">
+    <ion-item class="encuestas">
+      <h2>PUNTOS POR <b>ENCUESTAS</b></h2>
+      <h1 item-end>40</h1>
+      <img item-end src="assets/imgs/view.svg" alt="view" width="25px">
+    </ion-item>
+
+    <ion-item class="referidos" (click)="onGoToReferidos()">
+      <h2>PUNTOS POR <b>REFERIDOS</b></h2>
+      <h1 item-end>50</h1>
+      <img item-end src="assets/imgs/view.svg" alt="view" width="25px">
+    </ion-item>
+
+    <ion-item class="ventas">
+      <h2>PUNTOS POR <b>VENTAS</b></h2>
+      <h1 item-end>80</h1>
+      <img item-end src="assets/imgs/view.svg" alt="view" width="25px">
+    </ion-item>
+  </ion-list>
 
 </ion-content>
